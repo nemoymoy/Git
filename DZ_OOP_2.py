@@ -137,5 +137,6 @@ cool_lecturer = Lecturer('Some', 'Buddy', ['Python', 'C++'])
 
 best_student.rate_lecturer(cool_lecturer, 'Python', 9)
 good_student.rate_lecturer(cool_lecturer, 'C++', 10)
+good_student.rate_lecturer(cool_lecturer, 'C++', 10)
 
 print(cool_lecturer.grades)
