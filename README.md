@@ -27,7 +27,7 @@
 Написать SQL-запросы, создающие спроектированную БД. 
 Прислать ссылку на файл, содержащий SQL-запросы.
 
-#### Решение в [файле DZ_BD_3.py](https://github.com/nemoymoy/Git/blob/main/DZ_BD_3.py)
+#### Решение в [файле DZ_BD_3.sql](https://github.com/nemoymoy/Git/blob/main/DZ_BD_3.sql)
 
 
 ## Домашнее задание к лекции «Введение в БД. Типы БД»
