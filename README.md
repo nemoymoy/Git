@@ -1,5 +1,22 @@
 # Директория для Домашних заданий
 
+## Домашнее задание к лекции «Import. Module. Package»
+
+### Задание № 1. Разработать структуру программы «Бухгалтерия»:
+* main.py;
+* application/salary.py;
+* application/db/people.py.
+Main.py — основной модуль для запуска программы.
+В модуле salary.py функция calculate_salary.
+В модуле people.py функция get_employees.
+
+### Задание № 2. Импортировать функции в модуль main.py и вызывать эти функции в конструкции.
+
+#### Решение задания №1 и №2 отображено в [файле DZ_IMP_1.PNG](https://github.com/nemoymoy/Git/blob/main/DZ_IMP_1.PNG)
+#### Код в файле [файле main.py](https://github.com/nemoymoy/Git/blob/main/main.py)
+#### Код в файле [файле salary.py](https://github.com/nemoymoy/Git/blob/main/salary.py)
+#### Код в файле [файле people.py](https://github.com/nemoymoy/Git/blob/main/people.py)
+
 ## Домашнее задание к лекции «Продвинутая выборка данных»
 
 ### Задание № 1. Заполнение базы данных из домашнего задания к занятию "Работа с SQL. Создание БД"
