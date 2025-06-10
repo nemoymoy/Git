@@ -12,10 +12,34 @@ Main.py — основной модуль для запуска программ
 
 ### Задание № 2. Импортировать функции в модуль main.py и вызывать эти функции в конструкции.
 
+![DZ_IMP_1.PNG](https://github.com/nemoymoy/Git/blob/main/DZ_IMP_1.PNG?raw=true)
 #### Решение задания №1 и №2 отображено в [файле DZ_IMP_1.PNG](https://github.com/nemoymoy/Git/blob/main/DZ_IMP_1.PNG)
 #### Код в файле [файле main.py](https://github.com/nemoymoy/Git/blob/main/main.py)
-#### Код в файле [файле salary.py](https://github.com/nemoymoy/Git/blob/main/salary.py)
-#### Код в файле [файле people.py](https://github.com/nemoymoy/Git/blob/main/people.py)
+#### Код в файле [файле salary.py](https://github.com/nemoymoy/Git/blob/main/application/salary.py)
+#### Код в файле [файле people.py](https://github.com/nemoymoy/Git/blob/main/application/db/people.py)
+
+### Задание № 3. Познакомиться с модулем datetime. При вызове функций модуля main.py выводить текущую дату.
+#### Решение задания №3 в [файле main.py](https://github.com/nemoymoy/Git/blob/main/main.py)
+
+### Задание № 4. Найти интересный для себя пакет на pypi и в файле requirements.txt указать его с актуальной версией. При желании можно написать программу с этим пакетом.
+#### Решение задания №4 [Whoosh 2.7.4](https://pypi.org/project/Whoosh/)
+#### Файл с актуальной версией [Whoosh](https://github.com/nemoymoy/Git/blob/main/main.py/requirements.txt)
+#### Пример использования Whoosh в [файле main.py](https://github.com/nemoymoy/Git/blob/main/main.py)
+
+### Задание № 5. Создать рядом с файлом main.py модуль dirty_main.py и импортировать все функции с помощью конструкции (необязательное задание). 
+#### Решение задания №5.
+- В [файле __init__.py](https://github.com/nemoymoy/Git/blob/main/application/__init__.py) прописываем импорт 
+необходимых модулей и/или библиотек, например:
+```doctest
+from application.salary import calculate_salary
+from application.db.people import get_employees
+from application.index_search import IndexSearch
+```
+- В [файле dirty_main.py](https://github.com/nemoymoy/Git/blob/main/dirty_main.py) прописываем вызов импорта всех вышеописанных библиотек
+```doctest
+from application import *
+```
+
 
 ## Домашнее задание к лекции «Продвинутая выборка данных»
 
