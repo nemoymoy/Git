@@ -23,7 +23,7 @@ Main.py — основной модуль для запуска программ
 
 ### Задание № 4. Найти интересный для себя пакет на pypi и в файле requirements.txt указать его с актуальной версией. При желании можно написать программу с этим пакетом.
 #### Решение задания №4 [Whoosh 2.7.4](https://pypi.org/project/Whoosh/)
-#### Файл с актуальной версией Whoosh [requirements.txt](https://github.com/nemoymoy/Git/blob/main/main.py/requirements.txt)
+#### Файл с актуальной версией Whoosh [requirements.txt](https://github.com/nemoymoy/Git/blob/main/requirements.txt)
 #### Пример использования Whoosh в [файле main.py](https://github.com/nemoymoy/Git/blob/main/main.py)
 
 ### Задание № 5. Создать рядом с файлом main.py модуль dirty_main.py и импортировать все функции с помощью конструкции (необязательное задание). 
