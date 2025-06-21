@@ -10,6 +10,8 @@
 
 #### Решение задания в файле [DZ_RE.py](https://github.com/nemoymoy/Git/blob/main/DZ_RE.py)
 
+#### Выходной файл [phonebook.csv](https://github.com/nemoymoy/Git/blob/main/phonebook.csv)
+
 ## Домашнее задание к лекции «Import. Module. Package»
 
 ### Задание № 1. Разработать структуру программы «Бухгалтерия»:
