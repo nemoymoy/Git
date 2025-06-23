@@ -9,6 +9,8 @@ with open("phonebook_raw.csv", encoding="utf-8") as f:
 pprint(contacts_list)
 
 # TODO 1: выполните пункты 1-3 ДЗ
+
+
 temp_list = list()
 temp_list.append(['lastname',
   'firstname',
@@ -22,31 +24,18 @@ pattern = r"(\+7|8)(\s*)(\(*)(\d{3})(\)*)(\s*)(\-*)(\d{3})(\s*)(\-*)(\d{2})(\s*)
 subst = r"+7(\4)\8-\11-\14 \17\18\20"
 
 for value in contacts_list:
-  temp_str = list()
-  if len(value[0].split()) == 3:
-    last_name = value[0].split()[0]
-    first_name = value[0].split()[1]
-    sur_name = value[0].split()[2]
-  elif len(value[0].split()) == 2:
-    last_name = value[0].split()[0]
-    first_name = value[0].split()[1]
-  elif len(value[0].split()) == 1:
-    last_name = value[0]
 
-  if len(value[1].split()) == 2:
-    first_name = value[1].split()[0]
-    sur_name = value[1].split()[1]
-  elif len(value[1].split()) == 1:
-    first_name = value[1]
-
-  if len(value[2].split()) == 1:
-    sur_name = value[2]
+  full_name = ' '.join(value[:3]).split()
+  last_name = full_name[0] if len(full_name) > 0 else ''
+  first_name = full_name[1] if len(full_name) > 1 else ''
+  sur_name = full_name[2] if len(full_name) > 2 else ''
 
   organization = value[3]
   position = value[4]
   phone = (re.sub(pattern, subst, value[5])).strip()
   email = value[6]
 
+  temp_str = list()
   temp_str.append(last_name)
   temp_str.append(first_name)
   temp_str.append(sur_name)
