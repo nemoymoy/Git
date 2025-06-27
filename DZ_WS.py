@@ -1,5 +1,5 @@
 from pprint import pprint
-
+import re
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver import Chrome
@@ -46,8 +46,9 @@ for article_tag in article_tags:
         }
 
     for word in KEYWORDS:
-        if word in article_title.split():
+        if re.search(rf'\b{word}\b', article_title, re.IGNORECASE):
             print(article_dict)
+            break
 
     articles.append(article_dict)
 
@@ -77,8 +78,9 @@ for sidebar_article_tag in sidebar_article_tags:
         }
 
         for word in KEYWORDS:
-            if word in article_title.split():
+            if re.search(rf'\b{word}\b', article_title, re.IGNORECASE):
                 print(article_dict)
+                break
 
         articles.append(article_dict)
     except Exception:
@@ -95,9 +97,10 @@ for article_dict in articles:
     article_dict['article_text'] = article_text
 
     for word in KEYWORDS:
-        if word in article_text.split():
+        if re.search(rf'\b{word}\b', article_text, re.IGNORECASE):
             print(article_dict)
-            print(f"Количество вхождений слова '{word}':", article_text.count(word))
+            print(f"Количество вхождений слова '{word}':", len(re.findall(rf'\b{word}\b', article_text, re.IGNORECASE)))
+            break
 
 
 
