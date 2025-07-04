@@ -1,7 +1,7 @@
 import requests
 import pytest
 
-token_yd = "y0__xCl3ZfkAxjblgMg6vji2BIxb8DFCfuKPCE5yPwcfcKICeyZFA"
+token_yd = ""
 BASE_URL = "https://cloud-api.yandex.net/v1/disk/resources"
 
 @pytest.fixture
