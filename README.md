@@ -11,14 +11,14 @@
 - peek — возвращает верхний элемент стека, но не удаляет его. Стек не меняется;
 - size — возвращает количество элементов в стеке.
 
-#### Решение задания в файле [test_DZ_PI_1.py](https://github.com/nemoymoy/Git/blob/main/Tests/test_DZ_PI_1.py)
+#### Решение задания в файле [DZ_PI_1.py](https://github.com/nemoymoy/Git/blob/main/Tests/DZ_PI_1.py)
 
 ### Задание №2. Проверка сбалансированности скобок
 
 Используя стек из задания 1, решите задачу на проверку сбалансированности скобок. Сбалансированность скобок означает, 
 что каждый открывающий символ имеет соответствующий ему закрывающий, и пары скобок правильно вложены друг в друга.
 
-#### Решение задания в файле [test_DZ_PI_2.py](https://github.com/nemoymoy/Git/blob/main/Tests/test_DZ_PI_2.py)
+#### Решение задания в файле [DZ_PI_2.py](https://github.com/nemoymoy/Git/blob/main/Tests/DZ_PI_2.py)
 
 ### Задание №3. Нужно только провести рефакторинг кода
 
@@ -32,7 +32,7 @@
 if __name__ == '__main__'
 ```
 
-#### Решение задания в файле [test_DZ_PI_3.py](https://github.com/nemoymoy/Git/blob/main/Tests/test_DZ_PI_3.py)
+#### Решение задания в файле [DZ_PI_3.py](https://github.com/nemoymoy/Git/blob/main/Tests/DZ_PI_3.py)
 
 ## Домашнее задание к лекции «Tests»
 
